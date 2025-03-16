@@ -730,61 +730,6 @@
                         imghnode="200" sortType="default" sortValue="desc" productTags="" showmembergood="off"
                         style="display:none;"></div>
                 </div>
-                <script language="javascript">
-                    $('#layer5AAD396DAE384A8E147E59CFC3087579').find('img.img_lazy_load').lazyload({
-                        threshold: 200,
-                        failure_limit: $('#layer5AAD396DAE384A8E147E59CFC3087579').find('img.img_lazy_load').length,
-                        placeholder: "https://static.ysjianzhan.cn/website/template/default/images/blank.gif",
-                        load: function () {
-                            var self = $(this);
-                            var id = self.closest('.cstlayer').prop('id');
-                            if (window['set_thumb_' + id])
-                                window['set_thumb_' + id](this);
-                        }
-                    });
-
-                    var layer_id = "#layer5AAD396DAE384A8E147E59CFC3087579";
-                    $(layer_id + ' .productlistid').click(function (event) {
-                        event.preventDefault();
-                        var gourl = $(this).attr('href');
-                        var targettype = $(this).attr('target');
-                        _this = $(this);
-                        //判断是否是会员文章 
-                        $.ajax({
-                            type: "POST",
-                            url: parseToURL('product_list', 'checkproductid'),
-                            data: {
-                                id: _this.attr('productlistid')
-                            },
-                            dataType: "json",
-                            async: false,
-                            success: function (r) {
-                                if (r.code == -1) {
-                                    var islogin = '0';
-                                    ismember = true;
-                                    //是会员商品y
-                                    if (islogin == 0) {
-                                        event.preventDefault();
-                                        gourl = parseToURL('wp_signin', 'entrance');
-                                        location.href = gourl;
-                                        return false;
-                                    }
-                                } else if (r.code == -2) {
-                                    ismember = false;
-                                    //不是会员商品
-
-                                }
-                                if (targettype == undefined && gourl != 'javascript:void(0);') {
-                                    location.href = gourl;
-                                } else if (targettype != undefined && gourl != 'javascript:void(0);') {
-                                    window.open(gourl);
-                                }
-
-                            }
-
-                        })
-                    })
-                </script>
             </div>
             <script>
                 $('#layer5AAD396DAE384A8E147E59CFC3087579').triggerHandler('layer_ready');
@@ -799,8 +744,7 @@
                         style="overflow-wrap: break-word; padding: 0px; border-color: transparent; border-width: 0px; height: 163px; width: 300px;">
                         <p>
                             <span
-                                style="color: rgb(26, 25, 25); font-family: HelveticaNeue-Light, &quot;PingFang SC&quot;, MicrosoftYaHeiUI, &quot;Microsoft Yahei&quot;, Arial, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">除了运营本网站所必需的Cookie外，Aloenadur
-                                McQEFN还使用Cookie和其他跟踪工具来记住您的偏好，并为您提供额外的服务，以评估我们网站的性能以及提高我们对您兴趣的了解。我们的合作伙伴使用跟踪工具根据您的浏览习惯和个人资料为您提供个性化的广告，并优化我们的广告投放。如果您想了解我们使用这些工具的具体细节，请查阅我们的</span>
+                                style="color: rgb(26, 25, 25); font-family: HelveticaNeue-Light, &quot;PingFang SC&quot;, MicrosoftYaHeiUI, &quot;Microsoft Yahei&quot;, Arial, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);">除了运营本网站所必需的Cookie外，GUOCI还使用Cookie和其他跟踪工具来记住您的偏好，并为您提供额外的服务，以评估我们网站的性能以及提高我们对您兴趣的了解。我们的合作伙伴使用跟踪工具根据您的浏览习惯和个人资料为您提供个性化的广告，并优化我们的广告投放。如果您想了解我们使用这些工具的具体细节，请查阅我们的</span>
                             <a href="https://www.alexandermcqueen.cn/cookie-policy"
                                 style="text-size-adjust: none; -webkit-tap-highlight-color: transparent; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); text-decoration-line: underline; font-family: HelveticaNeue-Light, &quot;PingFang SC&quot;, MicrosoftYaHeiUI, &quot;Microsoft Yahei&quot;, Arial, sans-serif; font-size: 12px; white-space: normal;">cookie政策</a>
                             <span
@@ -826,11 +770,9 @@
         <!--//wp-mobile_navigate end-->
         <div id="footer_ads" style="width:100%;height:34px;border-top:1px solid #000;position: absolute;z-index:501;">
             <a class="footer_ads_link"
-                href="https://www.huaweicloud.com/product/cloudsite.html?utm_source=mchl&utm_cloudsite=pro487dab2a"
                 target="_blank">
                 <span class="footer_ads_text"
                     style="display:flex;align-items:center;justify-content:center;margin-top:2px;">
-                    <img src="https://static.ysjianzhan.cn/website/template/default/images/footer_ads.png">
                     <span style="margin-left:5px;color:#5a5a5a;">本网站由阿里云提供云计算及安全服务</span>
                 </span>
             </a>

@@ -2,12 +2,12 @@
 var products = [
     {
       id: 1,
-      name: "Screener系列男士织带0",
+      name: "Screener系列男士织带",
       link: "/detail.html?product_id=1",
-      category: "未分类",
+      category: "主页 - 男鞋",
       marketPrice: "8500.00",
       price: "8500.00",
-      image: "img/man shoes/Screener系列男士织带0.webp",
+      image: "img/man shoes/Screener系列男士运动鞋3.webp",
       description: "&lt;h1 ...&gt;阔型运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
       descriptionDisplay: "block"
     },
@@ -24,7 +24,7 @@ var products = [
     },
     {
       id: 3,
-      name: "Screener系列男士运动鞋2",
+      name: "Screener系列男士运动鞋",
       link: "/detail.html?product_id=3",
       category: "主页  - 鞋履 -阔型运动鞋",
       marketPrice: "8500.00",
@@ -35,18 +35,18 @@ var products = [
     },
     {
       id: 4,
-      name: "Screener系列男士运动鞋3",
+      name: "Screener系列男士运动鞋",
       link: "/detail.html?product_id=4",
       category: "主页  - 鞋履 -阔型运动鞋",
       marketPrice: "8500.00",
       price: "8500.00",
-      image: "img/man shoes/Screener系列男士运动鞋3.webp",
+      image: "img/man shoes/Screener系列男士织带0.webp",
       description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
       descriptionDisplay: "none"
     },
     {
       id: 5,
-      name: "Screener系列男士运动鞋4",
+      name: "Screener系列男士运动鞋",
       link: "/detail.html?product_id=5",
       category: "主页  - 鞋履 -阔型运动鞋",
       marketPrice: "8500.00",
@@ -57,7 +57,7 @@ var products = [
     },
     {
       id: 6,
-      name: "Screener系列男士织带厚5",
+      name: "Screener系列男士织带厚",
       link: "/detail.html?product_id=6",
       category: "主页  - 鞋履 -阔型运动鞋",
       marketPrice: "8500.00",
@@ -68,44 +68,44 @@ var products = [
     },
     {
       id: 7,
-      name: "【新品】男士驾车乐福鞋",
+      name: "Re-web系列男士运动鞋",
       link: "/detail.html?product_id=7",
       category: "主页  - 鞋履 -阔型运动鞋",
-      marketPrice: "6400.00",
-      price: "6400.00",
+      marketPrice: "12000.00",
+      price: "12000.00",
       image: "img/man shoes/Re-web系列男士运动鞋3.webp",
       description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
       descriptionDisplay: "none"
     },
     {
       id: 8,
-      name: "【新品】男士驾车乐福鞋",
+      name: "Re-web系列男士运动鞋",
       link: "/detail.html?product_id=8",
       category: "主页  - 鞋履 -阔型运动鞋",
-      marketPrice: "6400.00",
-      price: "6400.00",
+      marketPrice: "12000.00",
+      price: "12000.00",
       image: "img/man shoes/Re-web系列男士运动鞋2.webp",
       description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
       descriptionDisplay: "none"
     },
     {
       id: 9,
-      name: "【新品】男士驾车乐福鞋",
+      name: "Re-web系列男士运动鞋",
       link: "/detail.html?product_id=9",
       category: "主页  - 鞋履 -阔型运动鞋",
-      marketPrice: "6400.00",
-      price: "6400.00",
+      marketPrice: "10400.00",
+      price: "10400.00",
       image: "img/man shoes/Re-web系列男士运动鞋.webp",
       description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
       descriptionDisplay: "none"
     },
     {
       id: 10,
-      name: "【新品】男士驾车乐福鞋",
+      name: "jordaan系列牛皮乐福鞋",
       link: "/detail.html?product_id=10",
       category: "主页  - 鞋履 -阔型运动鞋",
-      marketPrice: "6400.00",
-      price: "6400.00",
+      marketPrice: "10400.00",
+      price: "10400.00",
       image: "img/man shoes/jordaan系列牛皮乐福鞋.webp",
       description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
       descriptionDisplay: "none"
@@ -126,12 +126,12 @@ var products = [
       html += `
         <li class="wp-new-article-style_lis" style="${liStyle}">
           <div class="img" style="height:200px;width:150px;">
-            <div class="imgloading" style="height:200px;width:148px;"></div>
+            <div class="imgloading" style="height:auto;width:148px;"></div>
             <a href="${product.link}" class="productlistid" productlistid="${product.id}">
               <img src="${product.image}" 
                    data-original="${product.image}" 
                    class="wp-product_list-thumbnail img_lazy_load" 
-                   style="height:200px;width:150px;" 
+                   style="height:auto;width:150px;" 
                    alt="${product.name}"/>
             </a>
           </div>
