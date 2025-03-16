@@ -1,27 +1,115 @@
 // 定义全局的产品数组
 var products = [
     {
-      id: 71,
-      name: "阔型运动鞋",
-      link: "/detail.html?product_id=71",
+      id: 1,
+      name: "Screener系列男士织带0",
+      link: "/detail.html?product_id=1",
       category: "未分类",
-      marketPrice: "6400.00",
-      price: "6400.00",
-      image: "https://pro487dab2a-pic12.ysjianzhan.cn/upload/eCom-757710WIA5V1142_F.jpg",
+      marketPrice: "8500.00",
+      price: "8500.00",
+      image: "img/man shoes/Screener系列男士织带0.webp",
       description: "&lt;h1 ...&gt;阔型运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
       descriptionDisplay: "block"
     },
     {
-      id: 70,
-      name: "【新品】男士驾车乐福鞋",
-      link: "/detail.html?product_id=70",
+      id: 2,
+      name: "Screener系列男士运动鞋",
+      link: "/detail.html?product_id=2",
       category: "主页  - 鞋履 -阔型运动鞋",
-      marketPrice: "6400.00",
-      price: "6400.00",
-      image: "https://pro487dab2a-pic12.ysjianzhan.cn/upload/Large-808180WIAC49166_F.jpg",
+      marketPrice: "8500.00",
+      price: "8500.00",
+      image: "img/man shoes/Screener系列男士运动鞋.webp",
       description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
       descriptionDisplay: "none"
     },
+    {
+      id: 3,
+      name: "Screener系列男士运动鞋2",
+      link: "/detail.html?product_id=3",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "8500.00",
+      price: "8500.00",
+      image: "img/man shoes/Screener系列男士运动鞋2.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 4,
+      name: "Screener系列男士运动鞋3",
+      link: "/detail.html?product_id=4",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "8500.00",
+      price: "8500.00",
+      image: "img/man shoes/Screener系列男士运动鞋3.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 5,
+      name: "Screener系列男士运动鞋4",
+      link: "/detail.html?product_id=5",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "8500.00",
+      price: "8500.00",
+      image: "img/man shoes/Screener系列男士运动鞋4.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 6,
+      name: "Screener系列男士织带厚5",
+      link: "/detail.html?product_id=6",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "8500.00",
+      price: "8500.00",
+      image: "img/man shoes/Screener系列男士织带厚5.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 7,
+      name: "【新品】男士驾车乐福鞋",
+      link: "/detail.html?product_id=7",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "6400.00",
+      price: "6400.00",
+      image: "img/man shoes/Re-web系列男士运动鞋3.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 8,
+      name: "【新品】男士驾车乐福鞋",
+      link: "/detail.html?product_id=8",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "6400.00",
+      price: "6400.00",
+      image: "img/man shoes/Re-web系列男士运动鞋2.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 9,
+      name: "【新品】男士驾车乐福鞋",
+      link: "/detail.html?product_id=9",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "6400.00",
+      price: "6400.00",
+      image: "img/man shoes/Re-web系列男士运动鞋.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 10,
+      name: "【新品】男士驾车乐福鞋",
+      link: "/detail.html?product_id=10",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "6400.00",
+      price: "6400.00",
+      image: "img/man shoes/jordaan系列牛皮乐福鞋.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    }
     // ...更多产品
   ];
   

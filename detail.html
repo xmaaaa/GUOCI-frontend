@@ -81,39 +81,26 @@
     <div id="page_set_css">
     </div><input type="hidden" id="page_id" name="page_id" value="1000006" rpid="1000005">
     <div id="scroll_container" class="scroll_contain" style="margin:0 auto;width:320px;">
-        <div id="scroll_container_bg" style="">&nbsp;</div>
+        <div id="scroll_container_bg">&nbsp;</div>
         <script>
             initScrollcontainerHeight();	
         </script>
         <div id="canvas" style=" margin: 0 auto;width:320px;margin:0 0px;;height:1031px">
             <div id='layer5F7B7CBC98E0AC0448A4BFBD3325EF85' type='media' class='cstlayer'
-                style='left: 35px; top: 7px; position: absolute; z-index: 100; width: 248px; height: 43px; ' mid=""
+                style='left: 35px; top: -20px; position: absolute; z-index: 100; width: 248px; height: 43px; ' mid=""
                 deg='0'>
-                <script>
-                    create_pc_media_set_pic('layer5F7B7CBC98E0AC0448A4BFBD3325EF85', false);
-                </script>
-                <div class="wp-media_content" style="overflow: hidden; width: 248px; height: 43px;" type="0">
-                    <div class="img_over picture_amplification"
-                        style='overflow: hidden; border-color: transparent; border-width: 0px; width: 248px; height: 43px;'>
-                        <img onerror="set_thumb_layer5F7B7CBC98E0AC0448A4BFBD3325EF85(this);"
-                            onload="set_thumb_layer5F7B7CBC98E0AC0448A4BFBD3325EF85(this);"
-                            id="wp-media-image_layer5F7B7CBC98E0AC0448A4BFBD3325EF85"
-                            src="https://pro487dab2a-pic12.ysjianzhan.cn/upload/1o27.jpg" type="zoom"
-                            class="paragraph_image " data-id="2"
-                            style="width: 248px; height: auto; top: -102px; left: 0px; position: relative;;display:none;" />
-                    </div>
-
-                </div>
-                <script>
-                    layer_media_ready_func('layer5F7B7CBC98E0AC0448A4BFBD3325EF85');
-                    $(function () {
-                        layer_media_lazyload_func('layer5F7B7CBC98E0AC0448A4BFBD3325EF85', 0);
-                    })
-                </script>
+                <a class="media_link" href="/index.html"
+                            style="display:inline-block;">
+                <img 
+                            id="wp-media-image"
+                            href="/index.html"
+                            src="/img/logo.png" type="zoom"
+                            class="paragraph_image"
+                            style="width: 248px; height: auto;" />
             </div>
             <script>				 $('#layer5F7B7CBC98E0AC0448A4BFBD3325EF85').triggerHandler('layer_ready');</script>
             <div id='layerB75CC15E83A541057BB74D8884C2F659' type='product_category' class='cstlayer'
-                style='left: 5px; top: 56px; position: absolute; z-index: 101; width: 269px; height: 37px; ' mid=""
+                style='left: 5px; top: 70px; position: absolute; z-index: 101; width: 269px; height: 37px; ' mid=""
                 deg='0'>
                 <div class="wp-product_category_content" id="wp-ptype_layerB75CC15E83A541057BB74D8884C2F659"
                     style="border-color: transparent; border-width: 0px; width: 269px; height: 37px;">
@@ -131,10 +118,8 @@
                         </div>
                         <div id="hoverlayerB75CC15E83A541057BB74D8884C2F659"
                             style=" display:none; width:0px; height:0px;"></div>
-                        <ul id="nav_layerB75CC15E83A541057BB74D8884C2F659" class="navigation">
-                            <li style="z-index:2;" class="wp_subtop" pid="27"><a class="mtitle   ">主页 - 鞋履 -阔型运动鞋</a>
-                            </li>
-                        </ul>
+                            
+                        <div id="navigationContainer"></div>
                         <div class="default_pid" style="display:none; width:0px; height:0px;"></div>
                     </div>
                 </div>
@@ -146,10 +131,6 @@
                     $(function () {
                         layer_product_category_accordion_onevent_func('layerB75CC15E83A541057BB74D8884C2F659');
                     });</script>
-                <script language="javascript">
-                    $(function () {
-                    })
-                </script>
             </div>
             <script>				 $('#layerB75CC15E83A541057BB74D8884C2F659').triggerHandler('layer_ready');</script>
             <div id='layer89472B2D82F757E2CDD7D3F5A1BE7818' type='product_detail' class='cstlayer'
@@ -256,10 +237,6 @@
                             display: none;
                         }
 
-                        #layer89472B2D82F757E2CDD7D3F5A1BE7818 .wp-new-prodcuts-detail-right .wp-new-prodcuts-market-price {
-                            text-decoration: ;
-                        }
-
                         #layer89472B2D82F757E2CDD7D3F5A1BE7818 .wp-product_detail_content .wp-product_detail-imgpreview {
                             width: 260px;
                             height: auto;
@@ -284,8 +261,6 @@
                             border: 1px solid #ff3500;
                         }
 
-                        #layer89472B2D82F757E2CDD7D3F5A1BE7818 .wp-new-prodcuts-detail-picture-small-element {}
-
                         #layer89472B2D82F757E2CDD7D3F5A1BE7818 .desc {
                             background-color: #ffffff;
                             background-image: none;
@@ -297,229 +272,6 @@
                     <link
                         href="https://static.ysjianzhan.cn/website/mplugin/product_detail/styles/default/product_detail.css?v=17199846"
                         rel="stylesheet" type="text/css" />
-                    <script type="text/javascript">
-                        $(function () {
-                            var dom = $("#layer89472B2D82F757E2CDD7D3F5A1BE7818");
-                            var gtskin = dom.find('.product_list_save_itemList').attr("productstyle");
-                            if (gtskin && (gtskin != 'listStyle')) {
-                                var $prdetail = dom.find('.wp-new-prodcuts-detail'), ltwidth = $prdetail.children('.wp-new-prodcuts-detail-left').outerWidth(true),
-                                    maxwidth = $prdetail.closest('.wp-new-prodcuts-detail-outside').width();
-                                if ($prdetail.children('.wp-new-prodcuts-detail-left').css("display") == "none") {
-                                    ltwidth = 0;
-                                }
-                                if (ltwidth < 180) {
-                                    $prdetail.width(maxwidth).children('.wp-new-prodcuts-detail-right').width(maxwidth - ltwidth);
-                                }
-                            }
-                            //是否被包含,是返回true,不是返回false
-                            function isContained(a, b) {
-                                if (!(a instanceof Array) || !(b instanceof Array)) return false;
-                                if (a.length < b.length) return false;
-                                var aStr = a.toString();
-                                for (var i = 0, len = b.length; i < len; i++) {
-                                    if (aStr.indexOf(b[i]) == -1) return false;
-                                }
-                                return true;
-                            }
-                            function in_array(search, array) {
-                                for (var i in array) {
-                                    if (array[i] == search) {
-                                        return true;
-                                    }
-                                }
-                                return false;
-                            }
-
-
-
-                            function getCookie(c_name) {
-                                if (document.cookie.length > 0) {
-                                    c_start = document.cookie.indexOf(c_name + "=")
-                                    if (c_start != -1) {
-                                        c_start = c_start + c_name.length + 1
-                                        c_end = document.cookie.indexOf(";", c_start)
-                                        if (c_end == -1) c_end = document.cookie.length
-                                        return unescape(document.cookie.substring(c_start, c_end))
-                                    }
-                                }
-                                return ""
-                            }
-
-                            //选择小图片
-                            $('.wp-new-prodcuts-detail-picture-small-element').click(function () {
-                                $(this).siblings().find('img').removeClass('wp-new-prodcuts-detail-picture-small-local');
-                                $(this).find('img').addClass("wp-new-prodcuts-detail-picture-small-local");
-                                $('.wp-new-prodcuts-detail-picture-big').find('img').attr('src', $(this).find('img').attr('src'));
-                                $('#wp-magnifier_boxbig img').removeAttr("src").attr("src", $(this).find('img').attr("data-src"));
-                            });
-
-                            //小图左滑动
-                            var isClickUsed = true;//防止用户狂点移动偏差
-                            var rightClickCount = 0;
-                            var view_item_count = Math.floor($('.wp-new-prodcuts-detail-picture-small-c').width()
-                                / $('.wp-new-prodcuts-detail-picture-small-element').width()); // 能显示的小图个数
-                            $('.wp-new-prodcuts-detail-picture-small-next').mousedown(function () {
-                                if ($('.wp-new-prodcuts-detail-picture-small-element').length < view_item_count || !isClickUsed) return false;
-                                isClickUsed = false;
-                                var tmp_val = $('.wp-new-prodcuts-detail-picture-small-element').length - view_item_count;
-                                if (rightClickCount < tmp_val) {
-                                    var gap = parseInt($('.wp-new-prodcuts-detail-picture-small-element').width()) + parseInt($('.wp-new-prodcuts-detail-picture-small-element').css('margin-right'));
-                                    var right = parseInt($('.wp-new-prodcuts-detail-picture-small-width').css('right'));
-                                    $('.wp-new-prodcuts-detail-picture-small-width').animate({ right: right + gap }, '', '', function () { isClickUsed = true; });
-                                    rightClickCount++;
-                                } else isClickUsed = true;
-                                return false;
-                            });
-
-                            //小图右滑动
-                            $('.wp-new-prodcuts-detail-picture-small-prev').mousedown(function () {
-                                if ($('.wp-new-prodcuts-detail-picture-small-element').length < view_item_count || !isClickUsed) return false;
-                                isClickUsed = false;
-                                if (parseInt($('.wp-new-prodcuts-detail-picture-small-width').css('right')) > 0) {
-                                    var gap = parseInt($('.wp-new-prodcuts-detail-picture-small-element').width()) + parseInt($('.wp-new-prodcuts-detail-picture-small-element').css('margin-right'));
-                                    var right = parseInt($('.wp-new-prodcuts-detail-picture-small-width').css('right'));
-                                    if (right - gap >= 0) {
-                                        $('.wp-new-prodcuts-detail-picture-small-width').animate({ right: right - gap }, '', '', function () { isClickUsed = true; });
-                                        rightClickCount--;
-                                    }
-                                } else isClickUsed = true;
-                                return false;
-                            });
-
-
-                            $('#layer89472B2D82F757E2CDD7D3F5A1BE7818').find('.buynow .wp-new-products-check-sub-c,.addcartshow .wp-pay_src').css("cursor", 'pointer');
-
-
-                            var layer = "#layer89472B2D82F757E2CDD7D3F5A1BE7818", $payment = $('.wproduct_payments', layer);
-                            // 'Buy now'&'Add to cart' tips
-                            $(layer).find('.buynow,.addcartshow').mouseenter(function (e) {
-                                var chkArr = [], tmpArr = [], tiptitle = '', $prdspec = $(layer + ' .product_attr'); if ($prdspec.length == 0) return;
-                                $prdspec.each(function () {
-                                    var $input = $(this);
-                                    if ($input.prop("checked")) { tmpArr.push($input.val()); chkArr.push($input.attr("name").replace(/[^\d]+/g, '')) }
-                                });
-                                $(layer + ' .wp-new-prodcuts-color').each(function (i, node) {
-                                    var $spec = $(node);
-                                    if ($.inArray($spec.attr("data"), chkArr) == -1) tiptitle += $('>span', $spec).html().replace(':', '') + ', ';
-                                });
-                                if (tiptitle.length) {
-                                    tiptitle = tiptitle.substr(0, $.trim(tiptitle).length - 1);
-                                    var $spectips = $('#wp-prdetailspectips'), poslt = e.clientX + 10, postop = e.clientY + 10;
-                                    if ($spectips.length) $spectips.css({ left: poslt + 'px', top: postop + 'px' });
-                                    else $('<div id="wp-prdetailspectips" style="left:' + poslt + 'px;top:' + postop + 'px;">请先选择: ' + tiptitle + '</div>').appendTo('body');
-                                }
-                            }).mousemove(function (e) {
-                                $('#wp-prdetailspectips').css({ left: (e.clientX + 10) + 'px', top: (e.clientY + 10) + 'px' });
-                            }).mouseleave(function (e) { $('#wp-prdetailspectips').remove() });
-
-                            $(layer).find('.product_detail_product_forms').click(function () {
-                                var urlparams = {};
-                                var product_id = "71";
-                                urlparams.product_id = product_id;
-                                urlparams.form_id = $(this).attr('data-formsid');
-                                var loadurl = parseToURL("wp_user_managemp", "gen_form", urlparams);
-                                window.location.href = loadurl;
-                                return false;
-                            });
-
-
-                            //buy now
-                            $(layer).find('.wp-new-products-check-sub-c').click(function () {
-                                // Disabled when not selected specifications 2013/07/24
-                                var tmpArr = [];
-                                if (typeof prodom != 'undefined') {
-                                    //根据是否有选中的css样式来获取选中的值
-                                    par_prodom.each(function () {
-                                        if ($(this).hasClass('wp-new-prodcuts-detail-button-select')) {
-                                            tmpArr.push($(this).find('.product_attr').val());
-                                        }
-                                    })
-
-                                    if (((parseInt('1') != tmpArr.length) || (tmpArr.length == 0)) && (parseInt('0') != 0)) return;
-                                }
-                                // End
-                                var serval = $(layer).find('form').serialize();
-                                var url = parseToURL('shopping_cart', 'showOrderInterface', { hdname: '' });
-                                window.location.href = url + "&" + serval;
-                                return false;
-
-                                $LAB
-                                    .script("https://static.ysjianzhan.cn/website/mplugin/shopping_cart/js/shopping_cart_browser.js")
-                                    .wait(function () {
-                                        var serval = $(layer).find('form').serialize();
-                                        var loadurl = parseToURL("shopping_cart", "showOrderInterface");
-                                        loadurl += "&" + serval;
-                                        wp_shoppingCart(loadurl, {
-                                            title: "Shopping Cart",
-                                            width: 791,
-                                            top: 60
-                                        });
-                                    });
-                                return false;
-                            });
-
-                            //加入购物车
-                            $(layer).find('.wp-pay_src').click(function () {
-
-                                var serval = $(layer).find('form').serialize();
-                                $.post(parseToURL('product_detail', 'incookie'), serval, function (o_result) {
-                                    if (o_result > 0) {
-                                        $(".wp-shopping_cart-con-num").each(function () {
-                                            $(this).html(o_result);
-                                        });
-
-                                        var url = parseToURL('shopping_cart', 'showItems', { hdname: '' });
-                                        window.location.href = url;
-                                        return false;
-
-                                        $LAB
-                                            .script("https://static.ysjianzhan.cn/website/mplugin/shopping_cart/js/shopping_cart_browser.js")
-                                            .wait(function () {
-                                                var loadurl = parseToURL("shopping_cart", "shownotes");
-                                                wp_shoppingCart(loadurl, {
-                                                    title: "Shopping Cart",
-                                                    width: 791,
-                                                    top: 60
-                                                });
-                                            });
-
-                                    } else {
-                                        alert('请求失败');
-                                    }
-
-                                    //显示购物袋
-                                    $.post(parseToURL("shopping_cart", "showShoppingBags"), function (data) {
-                                        $('#wp-shopping-bags').remove();
-                                        $('body').append(data);
-                                    });
-                                    return false;
-                                }).error(function () {
-                                    alert('请求失败');
-                                });
-
-                                return false;
-                            });
-
-                            var $wpay_input = $("#layer89472B2D82F757E2CDD7D3F5A1BE7818").find("input:[name='wproduct_paynum']");
-                            $wpay_input.keyup(function () { this.value = this.value.replace(/(?:\b0|[^\d+])/, ''); });
-                            //减少数量
-                            $("#layer89472B2D82F757E2CDD7D3F5A1BE7818").find('.wp-new-products-number-reduce').click(function () {
-                                var oldval = $._parseFloat($wpay_input.val() || 1);
-                                if (oldval > 1) oldval -= 1;
-                                $wpay_input.val(oldval);
-                                return false;
-                            });
-
-                            //增加数量
-                            $("#layer89472B2D82F757E2CDD7D3F5A1BE7818").find('.wp-new-products-number-add').click(function () {
-                                var oldval = $._parseFloat($wpay_input.val() || 1);
-                                $wpay_input.val(oldval + 1);
-                                return false;
-                            });
-                            // preLoad images
-                            preloadImages($('.wp-new-prodcuts-detail-picture-small-element > img', '#layer89472B2D82F757E2CDD7D3F5A1BE7818'));
-                        });
-                    </script>
                     <form method='post' action='#'>
                         <div id="productDetailContainer"></div>
                     </form>
@@ -569,6 +321,14 @@
                                     </div>
                                 `;
                                 document.getElementById("productDetailContainer").innerHTML = detailHTML;
+                                const navigateHtml = `
+                                    <ul id="nav_layerB75CC15E83A541057BB74D8884C2F659" class="navigation">
+                                    <li style="z-index:2;" class="wp_subtop" pid="27">
+                                        <a class="mtitle">${product.category}</a>
+                                    </li>
+                                    </ul>
+                                `;
+                                document.getElementById("navigationContainer").innerHTML = navigateHtml;
                             }
 
                             // DOM 加载完毕后执行
