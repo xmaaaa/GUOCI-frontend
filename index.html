@@ -199,9 +199,9 @@
                         </p>
                         <p>
                             <strong>
-                                <span style="font-size: 14px;">&nbsp;&nbsp;&nbsp;首页
-                                    &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;成衣 &nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;鞋履
-                                    &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;目录 &nbsp;</span>
+                                <span style="font-size: 16px; position: absolute; left: 30px;">&nbsp;&nbsp;&nbsp;首页
+                                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;服饰 &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;男鞋
+                                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;女鞋 &nbsp;</span>
                             </strong>
                             &nbsp;&nbsp;
                         </p>
@@ -233,9 +233,9 @@
                         <img onerror="set_thumb_layerC3FCB0973D03BE4BB71A7FF21ABF6714(this);"
                             onload="set_thumb_layerC3FCB0973D03BE4BB71A7FF21ABF6714(this);"
                             id="wp-media-image_layerC3FCB0973D03BE4BB71A7FF21ABF6714"
-                            src="https://pro487dab2a-pic12.ysjianzhan.cn/upload/v7j6.jpg" type="zoom"
+                            src="/img/homeImg.jpg" type="zoom"
                             class="paragraph_image " data-id="2"
-                            style="width: auto; height: 332px; top: 0px; left: -127px; position: relative;;display:none;"
+                            style="width: auto; height: 332px; top: 0px; left: 0px; position: relative;;display:none;"
                             alt="javascript:;" title="javascript:;" />
                     </div>
                 </div>
@@ -854,102 +854,8 @@
         wopop_navigator_standalone_func();
     </script>
 
-    <script>
-        var products = [
-            {
-                id: 71,
-                name: "阔型运动鞋",
-                link: "/detail.html?product_id=71",
-                category: "未分类",
-                marketPrice: "6400.00",
-                price: "6400.00",
-                image: "https://pro487dab2a-pic12.ysjianzhan.cn/upload/eCom-757710WIA5V1142_F.jpg",
-                // description部分可以直接存放您需要的HTML文本
-                description: "&lt;h1 class=&quot;product-detail-info_productName__F0cUW product-detail-info_marginTop0__rNVGM&quot; title=&quot;阔型运动鞋&quot; style=&quot;box-sizing: border-box; text-size-adjust: none; -webkit-tap-highlight-color: transparent; margin: 0px auto; font-weight: 400; font-size: 24px; color: rgb(0, 0, 0); line-height: 27.6px; padding-top: 2px; max-width: none; padding-right: 40px; font-family: __HelveticaNeueLight_c540d6, __HelveticaNeueLight_Fallback_c540d6, &amp;quot;PingFang SC&amp;quot;, MicrosoftYaHeiUI, &amp;quot;Microsoft Yahei&amp;quot;, Arial, sans-serif; text-wrap: wrap; background-color: rgb(255, 255, 255);&quot;&gt;阔型运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
-                // 设置description是否显示，display:block时显示，display:none时隐藏
-                descriptionDisplay: "block"
-            },
-            {
-                id: 70,
-                name: "【新品】男士驾车乐福鞋",
-                link: "/detail.html?product_id=70",
-                category: "主页  - 鞋履 -阔型运动鞋",
-                marketPrice: "6400.00",
-                price: "6400.00",
-                image: "https://pro487dab2a-pic12.ysjianzhan.cn/upload/Large-808180WIAC49166_F.jpg",
-                description: "&lt;h1 class=&quot;product-detail-info_productName__F0cUW&quot; title=&quot;阔型复古运动鞋&quot; style=&quot;box-sizing: border-box; text-size-adjust: none; -webkit-tap-highlight-color: transparent; margin: 8px auto 0px; font-weight: 400; font-size: 24px; color: rgb(0, 0, 0); line-height: 27.6px; padding-top: 2px; max-width: none; padding-right: 40px; font-family: __HelveticaNeueLight_c540d6, __HelveticaNeueLight_Fallback_c540d6, &amp;quot;PingFang SC&amp;quot;, MicrosoftYaHeiUI, &amp;quot;Microsoft Yahei&amp;quot;, Arial, sans-serif; text-wrap: wrap; background-color: rgb(255, 255, 255);&quot;&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
-                descriptionDisplay: "none"
-            },
-            {
-                id: 70,
-                name: "【新品】男士驾车乐",
-                link: "/detail.html?product_id=70",
-                category: "主页  - 鞋履",
-                marketPrice: "6400.00",
-                price: "6400.00",
-                image: "https://pro487dab2a-pic12.ysjianzhan.cn/upload/Large-808180WIAC49166_F.jpg",
-                description: "&lt;h1 class=&quot;product-detail-info_productName__F0cUW&quot; title=&quot;阔型复古运动鞋&quot; style=&quot;box-sizing: border-box; text-size-adjust: none; -webkit-tap-highlight-color: transparent; margin: 8px auto 0px; font-weight: 400; font-size: 24px; color: rgb(0, 0, 0); line-height: 27.6px; padding-top: 2px; max-width: none; padding-right: 40px; font-family: __HelveticaNeueLight_c540d6, __HelveticaNeueLight_Fallback_c540d6, &amp;quot;PingFang SC&amp;quot;, MicrosoftYaHeiUI, &amp;quot;Microsoft Yahei&amp;quot;, Arial, sans-serif; text-wrap: wrap; background-color: rgb(255, 255, 255);&quot;&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
-                descriptionDisplay: "none"
-            }
-        ];
-
-        // 动态渲染商品列表
-        function renderProductList() {
-            var listContainer = document.getElementById("productList");
-            var html = "";
-
-            products.forEach(function (product, index) {
-                // 设置每个<li>的内联样式：最后一项右边距为0，其它项右边距7px
-                var liStyle = "width:150px;margin-bottom:11px;";
-                liStyle += (index === products.length - 1) ? "margin-right:0px;" : "margin-right:7px;";
-
-                html += `
-          <li class="wp-new-article-style_lis" style="${liStyle}">
-            <div class="img" style="height:200px;width:150px;">
-              <div class="imgloading" style="height:200px;width:148px;"></div>
-              <a href="${product.link}" class="productlistid" productlistid="${product.id}">
-                <img src="${product.image}" 
-                     data-original="${product.image}" 
-                     class="wp-product_list-thumbnail img_lazy_load" 
-                     style="height:200px;width:150px;" 
-                     alt="${product.name}"/>
-              </a>
-            </div>
-            <div class="wp-new-article-style-c">
-              <p class="title">
-                <a href="${product.link}" class="productlistid" productlistid="${product.id}">${product.name}</a>
-              </p>
-              <p class="mcate">
-                <span class="category">${product.category}</span>
-              </p>
-              <p class="wp-new-ar-pro-style-price listprice_f">
-                <label class="list_price_f_title">市场价: </label>
-                <span class="list_price_f">${product.marketPrice}</span>
-              </p>
-              <p class="wp-new-ar-pro-style-price price_f">
-                <label class="price_f_title">价格: </label>
-                <span class="price_f">${product.price}</span>
-              </p>
-              <p class="wp-new-ar-pro-style-sales sales_f">
-                <label class="sales_f_title">销量:</label>
-                <span class="sales_f_salesvolume"></span>
-              </p>
-              <div class="wp-new-ar-pro-style-description">
-                <textarea style="display:${product.descriptionDisplay};">
-                  ${product.description}
-                </textarea>
-              </div>
-            </div>
-          </li>
-        `;
-            });
-
-            listContainer.innerHTML = html;
-        }
-
-        // 页面DOM加载完毕后渲染列表
-        document.addEventListener("DOMContentLoaded", renderProductList);
-    </script>
+    <!-- 引入产品数据和渲染代码 -->
+    <script src="js/productData.js"></script>
 </body>
 
 </html>

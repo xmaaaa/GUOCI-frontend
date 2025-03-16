@@ -148,8 +148,6 @@
                     });</script>
                 <script language="javascript">
                     $(function () {
-
-
                     })
                 </script>
             </div>
@@ -523,36 +521,7 @@
                         });
                     </script>
                     <form method='post' action='#'>
-                        <div class="wp-new-prodcuts-detail-outside">
-                            <div class="wp-new-prodcuts-detail">
-                                <div class="wp-new-prodcuts-detail-left wp-magnifier_box">
-                                    <div class="wp-new-prodcuts-detail-picture-big wp-magnifier_small">
-                                        <div class="imgloading" style="height:115px;width:115px;"> </div>
-                                        <span class="wp-magnifier_mark"></span>
-                                        <img onerror="set_thumb_layer89472B2D82F757E2CDD7D3F5A1BE7818(this);"
-                                            onload="set_thumb_layer89472B2D82F757E2CDD7D3F5A1BE7818(this);"
-                                            style="display:none;"
-                                            src="https://pro487dab2a-pic12.ysjianzhan.cn/upload/eCom-757710WIA5V1142_F.jpg"
-                                            class="wp-product_detail-imgpreview" alt="阔型运动鞋" />
-                                    </div>
-                                    <div id="wp-magnifier_boxbig">
-                                        <div class="wp-magnifier_big"><img
-                                                src="https://pro487dab2a-pic12.ysjianzhan.cn/upload/eCom-757710WIA5V1142_F.jpg"
-                                                alt="阔型运动鞋" /></div>
-                                    </div>
-                                </div>
-                                <div class="wp-new-prodcuts-detail-right">
-                                    <h2 class="prodetail_title">阔型运动鞋</h2>
-                                    <div class="wp-new-prodcuts-market-price"><label class="title">市场价：</label> <span>
-                                            <font>6400.00</font>
-                                        </span></div>
-                                    <div class="wp-new-prodcuts-sale-price"><label class="title">价格： </label>
-                                        <span>6400.00</span></div>
-
-
-                                </div>
-                            </div>
-                        </div>
+                        <div id="productDetailContainer"></div>
                     </form>
                     <div style="clear:both;overflow:hidden;height:15px;">&nbsp;&nbsp;</div>
 
@@ -560,6 +529,71 @@
 
                 </div>
             </div>
+            <script src="js/productData.js"></script>
+            <script>
+                            // 根据传入的 product_id 渲染产品详情
+                            function renderProductDetail(product) {
+                                const detailHTML = `
+                                    <div class="wp-new-prodcuts-detail-outside">
+                                    <div class="wp-new-prodcuts-detail">
+                                        <div class="wp-new-prodcuts-detail-left wp-magnifier_box">
+                                        <div class="wp-new-prodcuts-detail-picture-big wp-magnifier_small">
+                                            <div class="imgloading" style="height:115px;width:115px;"></div>
+                                            <span class="wp-magnifier_mark"></span>
+                                            <img 
+                                            onerror="set_thumb_layer89472B2D82F757E2CDD7D3F5A1BE7818(this);"
+                                            onload="set_thumb_layer89472B2D82F757E2CDD7D3F5A1BE7818(this);"
+                                            style="display:none;"
+                                            src="${product.image}"
+                                            class="wp-product_detail-imgpreview" 
+                                            alt="${product.name}" />
+                                        </div>
+                                        <div id="wp-magnifier_boxbig">
+                                            <div class="wp-magnifier_big">
+                                            <img src="${product.image}" alt="${product.name}" />
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="wp-new-prodcuts-detail-right">
+                                        <h2 class="prodetail_title">${product.name}</h2>
+                                        <div class="wp-new-prodcuts-market-price">
+                                            <label class="title">市场价：</label> 
+                                            <span><font>${product.marketPrice}</font></span>
+                                        </div>
+                                        <div class="wp-new-prodcuts-sale-price">
+                                            <label class="title">价格：</label>
+                                            <span>${product.price}</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                `;
+                                document.getElementById("productDetailContainer").innerHTML = detailHTML;
+                            }
+
+                            // DOM 加载完毕后执行
+                            document.addEventListener("DOMContentLoaded", function () {
+                                // 使用 URLSearchParams 获取 URL 中的 product_id 参数
+                                const urlParams = new URLSearchParams(window.location.search);
+                                const productId = urlParams.get("product_id");
+
+                                if (!productId) {
+                                    document.getElementById("productDetailContainer").innerHTML = "<p>未提供产品 ID 参数！</p>";
+                                    return;
+                                }
+
+                                // 从 productData.js 的全局 products 数组中查找对应的产品
+                                const product = products.find(function (item) {
+                                    return item.id.toString() === productId;
+                                });
+
+                                if (product) {
+                                    renderProductDetail(product);
+                                } else {
+                                    document.getElementById("productDetailContainer").innerHTML = "<p>未找到对应的产品信息！</p>";
+                                }
+                            });
+                        </script>
             <script type="text/javascript" language="javascript"
                 src="https://static.ysjianzhan.cn/website/script/previewImage.js?v=15887364"></script>
             <script type="text/javascript">
