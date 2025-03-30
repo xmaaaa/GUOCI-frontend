@@ -109,7 +109,118 @@ var products = [
       image: "img/man shoes/jordaan系列牛皮乐福鞋.webp",
       description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
       descriptionDisplay: "none"
+    },
+    {
+      id: 11,
+      name: "jordaan系列男士乐福鞋",
+      link: "/detail.html?product_id=11",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "12888.00",
+      price: "12888.00",
+      image: "img/man shoes/jordaan系列男士乐福鞋.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 12,
+      name: "G75运动鞋",
+      link: "/detail.html?product_id=12",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "12800.00",
+      price: "12800.00",
+      image: "img/man shoes/G75运动鞋.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 13,
+      name: "cub3d系列男士运动鞋",
+      link: "/detail.html?product_id=13",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "13000.00",
+      price: "13000.00",
+      image: "img/man shoes/cub3d系列男士运动鞋4.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 14,
+      name: "cub3d系列男士运动鞋",
+      link: "/detail.html?product_id=14",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "15000.00",
+      price: "15000.00",
+      image: "img/man shoes/cub3d系列男士运动鞋3.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 15,
+      name: "cub3d系列男士运动鞋",
+      link: "/detail.html?product_id=15",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "10400.00",
+      price: "10400.00",
+      image: "img/man shoes/cub3d系列男士运动鞋1.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 16,
+      name: "cub3d系列男士运动鞋",
+      link: "/detail.html?product_id=16",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "10400.00",
+      price: "10400.00",
+      image: "img/man shoes/cub3d系列男士运动鞋.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 17,
+      name: "Ace系列男士织带运动鞋",
+      link: "/detail.html?product_id=17",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "16000.00",
+      price: "16000.00",
+      image: "img/man shoes/Ace系列男士织带运动鞋4.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 18,
+      name: "Ace系列男士织带运动鞋",
+      link: "/detail.html?product_id=18",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "16000.00",
+      price: "16000.00",
+      image: "img/man shoes/Ace系列男士织带运动鞋3.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 19,
+      name: "Ace系列男士织带运动鞋",
+      link: "/detail.html?product_id=19",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "16000.00",
+      price: "16000.00",
+      image: "img/man shoes/Ace系列男士织带运动鞋2.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
+    },
+    {
+      id: 20,
+      name: "Ace系列男士织带运动鞋",
+      link: "/detail.html?product_id=20",
+      category: "主页  - 鞋履 -阔型运动鞋",
+      marketPrice: "16000.00",
+      price: "16000.00",
+      image: "img/man shoes/Ace系列男士织带运动鞋.webp",
+      description: "&lt;h1 ...&gt;阔型复古运动鞋&lt;/h1&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;",
+      descriptionDisplay: "none"
     }
+    
     // ...更多产品
   ];
   
